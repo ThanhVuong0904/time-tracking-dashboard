@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Time tracking dashboard</title>
+  <link rel="stylesheet" href="/css/styles.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="container">
+            <div class="user">
+                <div class="user-top">
+                    <div class="user-avatar">
+                        <img src="./images/image-jeremy.png" alt="user-avatar" class="user-avatar-image">
+                    </div>
+                    <div class="user-infor">
+                        <h4 class="user-report-for">Report for</h4>
+                        <h2 class="user-name">Jeremy Robson</h2>
+                    </div>
+                </div>
+                <div class="user-bottom">
+                    <ul class="user-bottom-list">
+                        <li class="user-bottom-item">
+                            <a href="#" class="user-bottom-link" data-click="daily">Daily</a>
+                        </li>
+                        <li class="user-bottom-item">
+                            <a href="#" class="user-bottom-link active" data-click="weekly">Weekly</a>
+                        </li>
+                        <li class="user-bottom-item">
+                            <a href="#" class="user-bottom-link" data-click="monthly">Monthly</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="wrap-tracking">
+                <div class="time-tracking">
+                    <div class="time-tracking-label tracking-work"></div>
+                    <div class="time-tracking-content">
+                        <div class="time-tracking-top">
+                            <h4>Work</h4>
+                            <img src="./images/icon-ellipsis.svg" alt="">
+                        </div>
+                        <div class="time-tracking-bottom">
+                            <h1 class="time-tracking-hours">32hrs</h1>
+                            <p class="time-tracking-lastweek">Last Week - 36hrs</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="time-tracking">
+                    <div class="time-tracking-label tracking-play"></div>
+                    <div class="time-tracking-content">
+                        <div class="time-tracking-top">
+                            <h4>Play</h4>
+                            <img src="./images/icon-ellipsis.svg" alt="">
+                        </div>
+                        <div class="time-tracking-bottom">
+                            <h1 class="time-tracking-hours">10hrs</h1>
+                            <p class="time-tracking-lastweek">Last Week - 8hrs</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="time-tracking">
+                    <div class="time-tracking-label tracking-study"></div>
+                    <div class="time-tracking-content">
+                        <div class="time-tracking-top">
+                            <h4>Study</h4>
+                            <img src="./images/icon-ellipsis.svg" alt="">
+                        </div>
+                        <div class="time-tracking-bottom">
+                            <h1 class="time-tracking-hours">4hrs</h1>
+                            <p class="time-tracking-lastweek">Last Week - 7hrs</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="time-tracking">
+                    <div class="time-tracking-label tracking-exercise"></div>
+                    <div class="time-tracking-content">
+                        <div class="time-tracking-top">
+                            <h4>Exercise</h4>
+                            <img src="./images/icon-ellipsis.svg" alt="">
+                        </div>
+                        <div class="time-tracking-bottom">
+                            <h1 class="time-tracking-hours">4hrs</h1>
+                            <p class="time-tracking-lastweek">Last Week - 5hrs</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="time-tracking">
+                    <div class="time-tracking-label tracking-social"></div>
+                    <div class="time-tracking-content">
+                        <div class="time-tracking-top">
+                            <h4>Social</h4>
+                            <img src="./images/icon-ellipsis.svg" alt="">
+                        </div>
+                        <div class="time-tracking-bottom">
+                            <h1 class="time-tracking-hours">5hrs</h1>
+                            <p class="time-tracking-lastweek">Last Week - 10hrs</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="time-tracking">
+                    <div class="time-tracking-label tracking-self-care"></div>
+                    <div class="time-tracking-content">
+                        <div class="time-tracking-top">
+                            <h4>Self Care</h4>
+                            <img src="./images/icon-ellipsis.svg" alt="">
+                        </div>
+                        <div class="time-tracking-bottom">
+                            <h1 class="time-tracking-hours">2hrs</h1>
+                            <p class="time-tracking-lastweek">Last Week - 2hrs</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+    </div>
+    <!-- <div class="wrapper">
+        <div class="container">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+    </div> -->
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+</html>
+<script src="./script.js"></script>

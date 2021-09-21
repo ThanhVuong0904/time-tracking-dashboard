@@ -1,0 +1,101 @@
+.user {
+     grid-row: 1/3;
+     position: relative; 
+     &-top {
+     position: relative; 
+          height: 355px;
+          border-radius: 15px;
+          background-color: $Blue;
+          padding: 35px 25px;
+          z-index: 1;
+     }
+     &-avatar {
+          border: 3px solid white;
+          border-radius: 50%;
+          width: 85px;
+          height: 85px;
+          & img {
+               object-fit: cover;
+               width: 100%;
+          }
+     }
+     &-report-for {
+          margin-top: 45px;
+          color: $Pale-Blue;
+          font-weight: 300;
+          font-size: 16px;
+     }
+     &-name {
+          color: white;
+          font-weight: 300;
+          font-size: 40px;
+     }
+     &-bottom {
+          padding: 25px;
+          height: 170px;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          z-index: 0;
+          background-color: $Dark-blue;
+          border-radius: 0 0 15px 15px;
+
+          &-item {
+               font-weight: 300;
+               cursor: pointer;
+          }
+          &-link {
+               border-bottom: 1px solid transparent;
+               color: $Pale-Blue;
+          }
+          &-item:hover &-link{
+               color: white;
+               border-bottom: 1px solid white;
+          }
+          &-item:not(:last-child){
+               margin-bottom: 30px;
+          }
+     }
+     @media screen and (max-width: 1023px) {
+          height: 200px;
+          &-top {
+               display: flex;
+               flex-direction: row;
+               height: 140px;
+               align-items: center;
+               justify-content: center;
+          }
+          &-infor {
+               margin-left: 20px;
+          }
+          &-avatar {
+               width: 70px;
+               height: 70px;
+          }
+          &-name {
+               font-size: 27px;
+          }
+          &-report-for {
+               margin-top: 0;
+          }
+          &-bottom {
+               height: unset;
+               &-list {
+                    display: flex;
+                    justify-content: space-between;
+                    
+               }
+               &-item:not(:last-child){
+                    // margin-top: 35px;
+                    margin-bottom: 0px;
+               }
+          }
+     }
+     @media screen and (max-width: 374px) {
+          &-name {
+               font-size: 20px;
+          }
+     }
+     
+}
