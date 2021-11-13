@@ -11,7 +11,7 @@ function start() {
 }
 
 function getData(callback) {
-     const API = "http://localhost:3000/tracking";
+     const API = "db.json";
      fetch(API)
      .then(response => response.json())
      .then(callback);
